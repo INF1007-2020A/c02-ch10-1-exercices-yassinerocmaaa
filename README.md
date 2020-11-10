@@ -60,11 +60,10 @@ Indices:
     [numpy.clip](https://numpy.org/doc/stable/reference/generated/numpy.clip.html),
     [numpy.ndarray.astype](https://docs.scipy.org/doc/numpy-1.15.0/reference/generated/numpy.ndarray.astype.html),
     [numpy.ndarray.tobytes](https://numpy.org/doc/stable/reference/generated/numpy.ndarray.tobytes.html),
-    [Les dtype de Numpy](https://numpy.org/doc/stable/reference/arrays.dtypes.html#arrays-dtypes-constructing)
+    [Les dtype de Numpy](https://numpy.org/doc/stable/reference/arrays.dtypes.html#arrays-dtypes-constructing),
+    [numpy.frombuffer](https://numpy.org/doc/stable/reference/generated/numpy.frombuffer.html)
 
 ### Sinusoïdal avec harmoniques (`sine_with_overtones`)
-
-*OPTIONNEL, ON POURRAIT NE PAS AVOIR LE TEMPS DE LE FAIRE EN COURS.*
 
 En acoustique et en musique, une note est une onde composée d'une fréquence fondamentale et d'ondes dont la fréquence est un multiple entier de la fondamentale ([ses harmoniques](https://en.wikipedia.org/wiki/Harmonic_series_(music))).
 
