@@ -20,8 +20,7 @@ def merge_channels(channels):
 	return np.fromiter((sample for samples in zip(*channels) for sample in samples), float)
 
 def separate_channels(samples, num_channels):
-	# Équivalent de :  [samples[i::num_channels] for i in range(num_channels)]
-	return np.fromiter((samples[i::num_channels] for i in range(num_channels)), float)
+	return [samples[i::num_channels] for i in range(num_channels)]
 
 def generate_sample_time_points(duration):
 	# Générer un tableau de points temporels également espacés en seconde. On a SAMPLING_FREQ points par seconde.
@@ -93,10 +92,6 @@ def main():
 		os.mkdir("output")
 	except:
 		pass
-
-	foo = generate_sample_time_points(0.001)
-	bar = sine(440, 0.5, 0.1)
-	qux = normalize(bar, 1)
 
 	with wave.open("output/perfect_fifth_panned.wav", "wb") as writer:
 		writer.setnchannels(2)
